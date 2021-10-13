@@ -51,8 +51,33 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>MD Danish Iqbal</h1>
-            <h2>Software Engineer</h2>
+            <div class="wrapper">
+                <div class="content">
+                    <h2 id="header"></h2>
+                    <write-and-delete timeout="500" speed="100">
+                        Java,
+                        C/C++, 
+                        Machine Learning, 
+                        Technologies
+                    </write-and-delete>
+                </div>
+            </div>
+            <script src="dist/lib.js"></script>
+            <script src="dist/webcomponent.js" defer></script>
+            <script>
+                writeAndDelete(document.querySelector("#header"), [
+                    "Md Danish Iqbal ! 🤓",
+                    "I am a Coder. 👨‍💻",
+                    "I love Progarmming. ❤️",
+                    "I am a Software Engineer. 💻🧑🏻‍ ",
+                ], {
+                    timeout: 1000,
+                    speed: 200,
+                    loop: true,
+                    errorQuota: 0.05,
+                });
+            </script>
+  
             <a href="images/danish_Iqbal_resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
